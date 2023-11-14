@@ -6,4 +6,8 @@ body {
 
 .main {
    font-weight: 900;
+   background: rgb(20, 20, 20);
+   margin: 15px;
+   padding: 10px;
+   border-radius: 10px;
 }

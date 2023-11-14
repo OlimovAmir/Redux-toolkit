@@ -1,0 +1,32 @@
+.posters {
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 135px;
+  color: rgb(49, 49, 49);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgb(40, 40, 158);
+  color: white;
+  font-weight: 900;
+  padding: 8px 10px 8px 10px;
+  border: 0;
+  margin: 0;
+}
+.foto {
+  height: auto;
+  border-radius: 10px;
+  width: 50%;
+  background: rgb(49, 49, 49);
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  left: 45%;
+}
