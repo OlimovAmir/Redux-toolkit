@@ -4,8 +4,15 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Sidebar from './components/sidebar/Sidebar';
 import AppStyles from './styles/App.module.css'
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getCategories } from './features/caregories/categoriesSlice';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getCategories())
+  },[dispatch])
   return (
     <div className="App">
       <Header />

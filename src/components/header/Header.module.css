@@ -11,31 +11,29 @@ img {
 }
 
 .avatar {
- 
   border-radius: 25%;
-  
 }
 
 .avatar img {
-    margin: 10px;
-    height: 45px;
+  margin: 10px;
+  height: 45px;
 }
 
 .searchContainer {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  /* Стили для иконки могут потребоваться дополнительной настройки в зависимости от вашего дизайна */
-  .searchContainer i {
-    position: absolute;
-    top: 50%;
-    right: 10px; /* Расстояние между иконкой и правым краем input */
-    transform: translateY(-45%);
-    z-index: 2;
-    color: black;
-  }
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Стили для иконки могут потребоваться дополнительной настройки в зависимости от вашего дизайна */
+.searchContainer i {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Расстояние между иконкой и правым краем input */
+  transform: translateY(-45%);
+  z-index: 2;
+  color: black;
+}
 
 button {
   cursor: pointer;
