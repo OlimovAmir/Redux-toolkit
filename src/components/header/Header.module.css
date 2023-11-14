@@ -1,19 +1,79 @@
 .header {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
 img {
-    width: 80px;
-    border-radius: 25%;
+  width: 60px;
+  border-radius: 25%;
 }
 
 .avatar {
-    background-image: url();
+ 
+  border-radius: 25%;
+  
 }
+
+.avatar img {
+    margin: 10px;
+    height: 45px;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Стили для иконки могут потребоваться дополнительной настройки в зависимости от вашего дизайна */
+  .searchContainer i {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Расстояние между иконкой и правым краем input */
+    transform: translateY(-45%);
+    z-index: 2;
+    color: black;
+  }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
+  margin-left: 10px;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: aqua;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+}
+.icon {
+  margin-right: 15px;
+}
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+.account {
+  position: relative;
+}
+.user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cartIcon {
+  position: relative;
+  display: inline-block;
 }
 
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
+.count {
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  background-color: rgb(238, 16, 34); /* Цвет фона (можете изменить) */
+  color: white; /* Цвет текста (можете изменить) */
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+}
