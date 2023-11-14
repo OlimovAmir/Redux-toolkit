@@ -39,8 +39,8 @@ function Header() {
           </div></button>
       </form>
       <div className={styles.account}>
-        <Link to={ROUTES.HOME} className={styles.icon} > <i class="fa-regular fa-heart"></i> </Link>
-        <Link to={ROUTES.CART} className={styles.cartIcon}> <i class="fa-solid fa-cart-shopping"></i> </Link>
+        <Link to={ROUTES.HOME} className={styles.icon} > <i className="fa-regular fa-heart"></i> </Link>
+        <Link to={ROUTES.CART} className={styles.cartIcon}> <i className="fa-solid fa-cart-shopping"></i> </Link>
         <span className={styles.count}>2</span>
       </div>
     </div>

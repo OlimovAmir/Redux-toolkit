@@ -15,9 +15,9 @@ function Footer() {
         <p>Developed by Olimov Amir</p>
       </div>
       <div className={stylesFooter.social}>
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-tiktok"></i>
+        <i className="fa-brands fa-square-facebook"></i>
+        <i className="fa-regular fa-envelope"></i>
+        <i className="fa-brands fa-tiktok"></i>
       </div>
     </section>
   )
