@@ -1,0 +1,27 @@
+.sidebar {
+
+  display: grid;
+  grid-template-rows: 30px 1fr 50px;
+  background: rgb(20, 20, 20);
+  color: white;
+  margin: 15px;
+  padding: 10px;
+}
+
+.menu li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}

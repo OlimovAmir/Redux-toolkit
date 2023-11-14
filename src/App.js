@@ -10,11 +10,10 @@ function App() {
     <div className="App">
       <Header />
       <div className={AppStyles.container}>
-        <Sidebar/>
+        <Sidebar />
         <AppRoutes />
       </div>
-      
-      <Footer/>
+      <Footer />
     </div>
   );
 }

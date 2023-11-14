@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(20, 20, 20);
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.social i {
+  margin-left: 15px;
+}
