@@ -1,4 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
 img {
     width: 80px;
     border-radius: 25%;
 }
+
+.avatar {
+    background-image: url();
+}
+
+button {
+    cursor: pointer;
+}
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
