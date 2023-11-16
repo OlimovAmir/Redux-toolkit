@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 
 function Home() {
     const {list} = useSelector(({products})=> products)
-    console.log(list)
+    console.log('testProduct---> ',list)
     return (
         <div className={styles.main}>
             <Posters/>

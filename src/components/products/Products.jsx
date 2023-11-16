@@ -1,10 +1,10 @@
 import React from 'react'
 import stylesProduct from './Products.module.css'
 import { Link } from 'react-router-dom'
-import stylesProducts from './Products.module.css';
+
 
 function Products({ title, products = [], amount, style = {} }) {
-    const list = products.filter((_, i)=> i < amount)
+    const list = products.filter((_, i) => i < amount)
     return (
         <section className={stylesProduct.products} style={style}>
             {title && <h2>{title}</h2>}
@@ -15,11 +15,19 @@ function Products({ title, products = [], amount, style = {} }) {
                     title,
                     category: { name: cat },
                     price,
+
                 }) =>
                     <Link to={`/products/${id}`} key={id} className={stylesProduct.product}>
+
                         <div
                             className={stylesProduct.image}
-                            style={{ backgroundImage: `url(${images[0]})` }}
+                            style={{
+                                backgroundImage: images && images.length > 0 ? `url(${encodeURI(images[0])})` : '',
+                                border: '2px solid rgb(49, 49, 49)',
+                                height: '300px',
+                                width: '180px',
+                            }}
+                            alt="Product Image"
                         > </div>
                         <div className={stylesProduct.wrapper} >
                             <h3 className={stylesProduct.title}>{title}</h3>
@@ -30,7 +38,7 @@ function Products({ title, products = [], amount, style = {} }) {
                                     <div className={stylesProduct.oldPrice}>{Math.floor(price * 0.8)}$</div>
                                 </div>
                                 <div className={stylesProduct.purchases}>
-                                    {Math.floor(Math.random() * 20 +1 )} purchased
+                                    {Math.floor(Math.random() * 20 + 1)} purchased
                                 </div>
                             </div>
                         </div>
@@ -38,6 +46,7 @@ function Products({ title, products = [], amount, style = {} }) {
                 )}
             </div>
         </section>
+
     )
 }
 
