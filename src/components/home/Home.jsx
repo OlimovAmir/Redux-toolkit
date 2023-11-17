@@ -5,7 +5,7 @@ import Products from '../products/Products'
 import { useSelector } from 'react-redux'
 
 function Home() {
-    const {list} = useSelector(({products})=> products)
+    const {list} = useSelector(({products})=> products) // используем useSelector чтоб достать данные из store
     console.log('testProduct---> ',list)
     return (
         <div className={styles.main}>

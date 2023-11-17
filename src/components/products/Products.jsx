@@ -24,6 +24,7 @@ function Products({ title, products = [], amount, style = {} }) {
                             style={{
                                 backgroundImage: images && images.length > 0 ? `url(${encodeURI(images[0])})` : '',
                                 border: '2px solid rgb(49, 49, 49)',
+                                backgroundSize: 'cover',
                                 height: '300px',
                                 width: '180px',
                             }}
