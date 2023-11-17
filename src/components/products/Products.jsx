@@ -29,7 +29,8 @@ function Products({ title, products = [], amount, style = {} }) {
                                 width: '180px',
                             }}
                             alt="Product Image"
-                        > </div>
+                        >
+                        </div>
                         <div className={stylesProduct.wrapper} >
                             <h3 className={stylesProduct.title}>{title}</h3>
                             <div className={stylesProduct.cat}>{cat}</div>

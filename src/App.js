@@ -9,11 +9,12 @@ import { useEffect } from 'react';
 import { getCategories } from './features/caregories/categoriesSlice';
 import { getProducts } from './features/products/productsSlice';
 import Products from './components/products/Products';
+import Categories from './components/categories/Categories';
 
 
 function App() {
-  const { list } = useSelector(({ products }) => products) // используем useSelector чтоб достать данные из store
-  console.log('testProduct---> ', list)
+  const { products, categories } = useSelector((state) => state) // используем useSelector чтоб достать данные из store
+  console.log('cat --> ', categories.list)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCategories())
@@ -27,7 +28,8 @@ function App() {
         <AppRoutes />
         
       </div>
-      <Products  products={list} amount={5} title="Trending" />
+      <Products  products={products.list} amount={5} title="Trending" />
+      <Categories  products={categories.list} amount={5} title="Worth seeing" />
       <Footer />
     </div>
   );
