@@ -7,31 +7,37 @@ import AppStyles from './styles/App.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getCategories } from './features/caregories/categoriesSlice';
-import { getProducts } from './features/products/productsSlice';
+import { filterByPrice, getProducts } from './features/products/productsSlice';
 import Products from './components/products/Products';
 import Categories from './components/categories/Categories';
 import Banner from './components/banner/Banner';
 
 
 function App() {
-  const { products, categories } = useSelector((state) => state) // используем useSelector чтоб достать данные из store
-  console.log('cat --> ', categories.list)
+  const {
+    products: { list, filtered },
+    categories
+  } = useSelector((state) => state) // используем useSelector чтоб достать данные из store
+  //console.log('cat --> ', categories.list)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCategories())
     dispatch(getProducts())
-  }, [dispatch])
+    if (!list.length) return;
+    dispatch(filterByPrice(200));
+  }, [dispatch, list.length])
   return (
     <div className="App">
       <Header />
       <div className={AppStyles.container}>
         <Sidebar />
         <AppRoutes />
-        
+
       </div>
-      <Products  products={products.list} amount={5} title="Trending" />
-      <Categories  products={categories.list} amount={5} title="Worth seeing" />
-      <Banner/>
+      <Products products={list} amount={5} title="Trending" />
+      <Categories products={categories.list} amount={5} title="Worth seeing" />
+      <Banner />
+      <Products products={filtered} amount={5} title="Trending" />
       <Footer />
     </div>
   );
