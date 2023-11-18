@@ -37,7 +37,7 @@ function App() {
       <Products products={list} amount={5} title="Trending" />
       <Categories products={categories.list} amount={5} title="Worth seeing" />
       <Banner />
-      <Products products={filtered} amount={5} title="Trending" />
+      <Products products={filtered} amount={5} title="Less than 200$" />
       <Footer />
     </div>
   );
