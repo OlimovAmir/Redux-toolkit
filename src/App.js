@@ -10,6 +10,7 @@ import { getCategories } from './features/caregories/categoriesSlice';
 import { getProducts } from './features/products/productsSlice';
 import Products from './components/products/Products';
 import Categories from './components/categories/Categories';
+import Banner from './components/banner/Banner';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       </div>
       <Products  products={products.list} amount={5} title="Trending" />
       <Categories  products={categories.list} amount={5} title="Worth seeing" />
+      <Banner/>
       <Footer />
     </div>
   );
