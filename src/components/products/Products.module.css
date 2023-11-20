@@ -1,15 +1,29 @@
 .list {
-    border: 2px solid rgb(49, 49, 49);
-    background: rgb(20, 20, 20);
-    margin: 10px;
-    padding: 0px;
-    border-radius: 10px;
-    width: 99%;
-    display: flex;
-    justify-content: space-around;
+  border: 2px solid rgb(49, 49, 49);
+  background: rgb(20, 20, 20);
+  margin: 10px;
+  padding: 0px;
+  border-radius: 10px;
+  width: 99%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .products {
-    text-align: center;
-    width: 99%;
+  text-align: center;
+  width: 99%;
+}
+
+.image {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.wrapper {
+  color: white;
+}
+
+.purchases {
+    text-decoration: none;
+    margin-bottom: 10px;
 }

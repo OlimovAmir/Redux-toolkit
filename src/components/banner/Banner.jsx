@@ -4,10 +4,10 @@ import imgBanner from '../../img/bunner1.jpg';
 
 function Banner() {
   return (
-    <section className={stylesBanner}>
-      <div className={stylesBanner}>
-        <p className={stylesBanner}>
-          NEW YEAR
+    <section className={stylesBanner.wrapper}>
+      <div className={stylesBanner.left}>
+        <p className={stylesBanner.title}>
+          <p>NEW YEAR</p>
           <span>SALE</span>
         </p>
         <button className={stylesBanner}>See more</button>
@@ -21,12 +21,10 @@ function Banner() {
           height: '100vh',
           width: '100%',
         }}
-        alt="Banner Image"
-      >
+        alt="Banner Image">
         <p className={stylesBanner.discount}>
           save up to <span> 50% </span> of
         </p>
-
       </div>
     </section>
   )

@@ -7,7 +7,7 @@ function Categories({ id, title, products = [], amount }) {
     //console.log('log categories--->', list)
     return (
         <section className={stylesCotegories.section}>
-            <h2>{title}</h2>
+            <h2 className={stylesCotegories.title} >{title}</h2>
             <div className={stylesCotegories.list}>
                 {list.map(({ id, name, image }) => (
                     <Link to={`/categories/${id}`} key={id} className={stylesCotegories.item}>
